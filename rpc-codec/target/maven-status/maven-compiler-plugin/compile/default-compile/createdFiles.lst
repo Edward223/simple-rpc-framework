@@ -1,0 +1,5 @@
+com\rpc\codec\JSONDecoder.class
+com\rpc\codec\KryoEncoder.class
+com\rpc\codec\Encoder.class
+com\rpc\codec\JSONEncoder.class
+com\rpc\codec\Decoder.class

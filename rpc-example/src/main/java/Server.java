@@ -1,3 +1,4 @@
+import com.rpc.server.NettyRpcServer;
 import com.rpc.server.RpcServer;
 import com.rpc.server.RpcServerConfig;
 
@@ -10,8 +11,10 @@ import com.rpc.server.RpcServerConfig;
 public class Server {
 
     public static void main(String[] args) {
-        RpcServer rpcServer=new RpcServer(new RpcServerConfig());
-        rpcServer.register(CalculateService.class,new Calculate());
-        rpcServer.start();
+//        RpcServer rpcServer=new RpcServer(new RpcServerConfig());
+//        rpcServer.register(CalculateService.class,new Calculate());
+//        rpcServer.start();
+
+        new NettyRpcServer().start();
     }
 }

@@ -16,11 +16,14 @@
         <module>rpc-server</module>
         <module>rpc-client</module>
         <module>rpc-example</module>
+        <module>rpc-registry</module>
     </modules>
     <properties>
         <commons.version>2.5</commons.version>
         <jetty.version>9.4.40.v20210413</jetty.version>
         <fastjson.version>1.2.78</fastjson.version>
+        <netty.version>4.1.6.Final</netty.version>
+        <kryo-shaded>4.0.2</kryo-shaded>
     </properties>
     <dependencyManagement>
         <dependencies>
@@ -38,6 +41,16 @@
                 <groupId>com.alibaba</groupId>
                 <artifactId>fastjson</artifactId>
                 <version>${fastjson.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.netty</groupId>
+                <artifactId>netty-all</artifactId>
+                <version>${netty.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.esotericsoftware</groupId>
+                <artifactId>kryo-shaded</artifactId>
+                <version>${kryo-shaded}</version>
             </dependency>
 
         </dependencies>
